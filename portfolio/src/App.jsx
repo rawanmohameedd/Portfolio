@@ -7,13 +7,13 @@ import { Experience } from './Components/Experience';
 export default function App() {  
   return (  
     <div className='flex flex-col items-center'>
-      <div className='w-full'>
+      <div>
         <Aboutme />
       </div>
-      <div className='w-full'>
+      <div>
         <Experience />
       </div>
-      <div className='w-full'>
+      <div>
         <Projects />
       </div>
       <div className='w-full'>
