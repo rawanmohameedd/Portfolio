@@ -10,12 +10,7 @@ export default function App() {
       <div>
         <Aboutme />
       </div>
-      <div>
-        <Experience />
-      </div>
-      <div>
-        <Projects />
-      </div>
+  
       <div className='w-full'>
         <Contactme />
       </div>
