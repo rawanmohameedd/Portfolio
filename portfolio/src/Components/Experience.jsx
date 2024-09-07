@@ -1,56 +1,72 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import ischool1 from '../Images/undefined Certificate.png';
 import ischool2 from '../Images/undefined Certificate (1).png';
+import { handleFullscreen } from '../fullscreen';
+import { langStyle } from './Aboutme';
 
 export default function Experience() {
   const imageRef = useRef(null);
 
-  const handleFullscreen = () => {
-    if (imageRef.current) {
-      if (imageRef.current.requestFullscreen) {
-        imageRef.current.requestFullscreen();
-      } else if (imageRef.current.mozRequestFullScreen) { /* Firefox */
-        imageRef.current.mozRequestFullScreen();
-      } else if (imageRef.current.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        imageRef.current.webkitRequestFullscreen();
-      } else if (imageRef.current.msRequestFullscreen) { /* IE/Edge */
-        imageRef.current.msRequestFullscreen();
-      }
-    }
-  };
-
   return (
-    <div className="flex flex-col w-screen bg-background justify-center items-center relative p-6 pt-10">
-      <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6">Experience</h2>
-      <div className="w-full md:w-2/3">
-        <div className="flex flex-row justify-between items-center mb-4">
-          <h2 className="text-lg font-semibold">Full-stack Projects - Freelance </h2>
-          <h2 className="text-lg">01/2024 - present</h2>
+    <div className="flex flex-col w-screen bg-background justify-center items-center relative p-3 pt-10">
+      <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6 ">
+        Experience
+      </h2>
+
+      <div className="w-full flex flex-col space-y-4 mb-6">
+        <div className="flex flex-row justify-between items-center">
+          <h3 className="text-lg font-semibold">Full-stack Projects - Freelance</h3>
+          <span className="text-lg">11/2023 - present</span>
         </div>
-        <div className="flex flex-col items-start space-x-4">
-          <div className="flex flex-row md:flex-col space-x-4 md:space-y-4">
 
-          </div>
-          <div>
+        <div className="hover:bg-primary">
+          <h4 className="font-bold">Learning Management System Website</h4>
+          <p>
+            Collaborated in developing a website that enables users to:
+          </p>
+          <ul className="list-disc pl-6">
+            <li>Sign up or log in</li>
+            <li>Browse course categories</li>
+            <li>Select specific courses and access content including videos</li>
+            <li>View instructor ratings and biographies</li>
+          </ul>
+          <p>Enhanced the overall learning experience for users by providing seamless access to learning materials.</p>
+        </div>
 
-          </div>
+        <div className="hover:bg-primary">
+          <h4 className="font-bold">E-Commerce Website</h4>
+          <p>
+          Collaborated in developing an innovative e-commerce platform, ensuring:
+          </p>
+          <ul className="list-disc pl-6">
+            <li>Efficient management of product listings, orders, and customer data</li>
+            <li>Seamless user experience for shoppers</li>
+          </ul>
+        </div>
+
+        <div className=" flex w-screen">
+          <span className={langStyle}>React</span>
+          <span className={langStyle}>Express.js</span>
+          <span className={langStyle}>PostgreSQL</span>
+          <span className={langStyle}>MongoDB</span>
         </div>
       </div>
 
-      <div className="w-full ">
-        <div className="flex flex-row justify-between items-center mb-4">
-          <h2 className="text-lg font-semibold">Coding Instructor - iSchool</h2>
-          <h2 className="text-lg">06/2024 - 08/2024</h2>
+      <div className="w-full flex flex-col space-y-4 hover:bg-primary">
+        <div className="flex flex-row justify-between items-center ">
+          <h3 className="text-lg font-bold">Coding Instructor - iSchool</h3>
+          <span className="text-lg">06/2024 - 08/2024</span>
         </div>
+
         <div className="flex flex-row items-start space-x-4">
-          <div className="flex flex-col space-y-4" onClick={handleFullscreen}>
-            <img ref={imageRef} src={ischool2} width='500px' height='500px' />
+          <div className="flex flex-col space-y-4" onClick={() => handleFullscreen(imageRef)}>
+            <img ref={imageRef} src={ischool2} width="500px" height="500px" />
           </div>
           <div>
-
-          <p className="text-base text-justify">
-            Teaching grade 5! It has been a truly wonderful experience watching young minds engage with coding concepts and develop their problem-solving skills, for the Digital Egypt Marvel Initiative in cooperation with the Ministry of Communications and Information Technology, Egypt.
-          </p>
+            <p className="text-base text-justify">
+              Taught grade 5 students coding concepts as part of the Digital Egypt Marvel Initiative. 
+              It was a rewarding experience to help students develop problem-solving skills in cooperation with the Ministry of Communications and Information Technology, Egypt.
+            </p>
           </div>
         </div>
       </div>
