@@ -28,7 +28,7 @@ export default function Contactme() {
         <div
             ref={contactRef}
             onClick={toggle}
-            className='flex flex-col fixed items-center justify-center right-0  space-y-4 px-6 rounded-md bg-contactBg'>
+            className='flex flex-col fixed items-center justify-center right-0  space-y-4 px-6 rounded-md bg-contactBg mt-[250px]'>
             <h2 className='font-bold text-background hover:text-hoverPrimary'> Contact</h2>
             {isOpen && (
                 <div className='flex flex-col '>
