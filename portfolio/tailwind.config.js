@@ -6,6 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        spin: 'spin 10s linear infinite', 
+      },
+    
       colors: {
         primary: '#0077b6',  
         secondary: '#2b2b2b', 
