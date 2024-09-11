@@ -17,14 +17,14 @@ export const Projects = () => {
         </h3>
 
         <div className="grid grid-cols-2 gap-8 mt-6">
-          <div className="space-y-4 text-justify">
-            <p>
+          <div className="space-y-4 ">
+            <p className='text-justify'>
               This project was developed by a team of five members, with me as the team leader and responsible for full stack and software development. <span className="font-bold">The project divided into:</span>
             </p>
 
             <details className="bg-gray-100 p-4 rounded-md">
               <summary className={summaryStyle}>1. Indoor Localization</summary>
-              <p className="mt-2">
+              <p className="mt-2 text-justify">
                 We developed an indoor navigation system that relies on collecting a dataset containing RSSI of WiFi readings from specific routers. 
                 We used KNN models and Flask for model deployment after the training phase. This ensures precise indoor localization for tourists. 
                 The Flask response, containing the location, is stored in the database and updated every 30 seconds to support app features.
@@ -46,7 +46,7 @@ export const Projects = () => {
             <details className="bg-gray-100 p-4 rounded-md mt-2">
               <summary className={summaryStyle}>2. Mobile Application</summary>
                 Our mobile application offers several key features:
-                <ul className="list-disc pl-5 mt-1">
+                <ul className="list-disc pl-5 mt-1 text-justify">
                   <li>User Accounts: Tourists and tour guides can create accounts.</li>
                   <li>Connection Requests: Tourists can send connection requests to their preferred tour guides.</li>
                   <li>Tour Details: Tour guides can view tour details.</li>
@@ -75,7 +75,7 @@ export const Projects = () => {
 
             <details className="bg-gray-100 p-4 rounded-md">
               <summary className={summaryStyle}>3. Administrator Website</summary>
-              <p className="mt-2">
+              <p className="mt-2 text-justify">
                 Admins can add, edit, and delete museum information. They can also monitor all users and their locations within the museum. <br/>
                 <span className={langStyle}>React</span>
                     <span className={langStyle}>Node.js</span>

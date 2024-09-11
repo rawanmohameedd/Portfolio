@@ -4,24 +4,31 @@ import { handleFullscreen } from '../fullscreen'
 
 export const langStyle = "bg-primary  rounded-2xl text-center p-2 mr-1 my-2 text-white w-fit inline-block"
 export function Profile() {
-    const imageref = useRef(null)
+    const imageref = useRef(null);
+
     return (
-        <div onClick={() => handleFullscreen(imageref)}
-            className='w-fit flex flex-col md:flex-row md:m-4 font-bold items-center justify-center  text-primary md:text-xl text-2xl '>
-            <img src={profile} width='200px' height='200px'
-                className='rounded-full'
-                ref={imageref} />
-            <div className='m-4 text-center '>
-                <h2> Rawan Mohamed </h2>
-                <h2> Full-Stack Developer </h2>
+        <div className='flex items-center justify-center md:m-4'>
+            <div className='w-fit flex flex-col items-center justify-center text-primary font-bold  md:text-xl text-2xl'>
+                <div onClick={() => handleFullscreen(imageref)} className='cursor-pointer'>
+                    <img
+                        src={profile}
+                        className='rounded-full w-[400px] h-[400px] md:w-[200px] md:h-[200px]'
+                        ref={imageref}
+                    />
+                </div>
+                <div className='m-4 text-center'>
+                    <h2>Rawan Mohamed</h2>
+                    <h2>Full-Stack Developer</h2>
+                </div>
             </div>
         </div>
-    )
+    );
 }
+
 
 export function Aboutme() {
     return (
-        <div className='ml-4 text-[20px] text-secondary'>
+        <div className='ml-4 text-[20px] text-secondary mt-5'>
             <span > Full-Stack Developer with a passion for creating innovative responsive solutions.</span>
             <p> I specialize in a range of technologies including:
             </p>

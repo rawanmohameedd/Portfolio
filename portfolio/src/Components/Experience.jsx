@@ -68,8 +68,10 @@ export default function Experience() {
             </p>
           </div>
 
-          <div className="flex-shrink-0 cursor-pointer" onClick={() => handleFullscreen(imageRef)}>
-            <img ref={imageRef} src={ischool2} width="300px" height="300px" alt="iSchool Certificate" />
+          <div className="flex-shrink-0" onClick={() => handleFullscreen(imageRef)}>
+            <img ref={imageRef} 
+            src={ischool2} 
+            className='w-[300px] h-[300px] md:w-[150px] md:h-[150px]' />
           </div>
         </div>
       </div>
