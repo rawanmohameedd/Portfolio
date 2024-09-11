@@ -12,6 +12,7 @@ export default function Contactme() {
         setOpen(!isOpen)
     }
 
+    
     const handleClickOutside = (event) => {
         if (contactRef.current && !contactRef.current.contains(event.target))
             setOpen(false)
