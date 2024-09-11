@@ -28,11 +28,10 @@ export default function Contactme() {
         <div
             ref={contactRef}
             onClick={toggle}
-            className='flex flex-col fixed items-center  right-0  space-y-4 px-6 rounded-md bg-contactBg mt-[250px]'>
+            className='flex flex-col items-center fixed right-0 bottom-0 space-y-4 p-4 rounded-md bg-contactBg'>
             <h2 className='font-bold text-background hover:text-hoverPrimary'> Contact</h2>
             {isOpen && (
-                <div className='flex flex-col '>
-
+                <div className='flex flex-col items-center'>
                     <a href='https://www.linkedin.com/in/rawan-mohamed-969a3a220/' className=' text-white hover:text-blue-500'>
                         <FaLinkedin size={35} />
                     </a>
@@ -44,8 +43,6 @@ export default function Contactme() {
                     </a>
                 </div>
             )}
-
         </div>
-
     )
 }

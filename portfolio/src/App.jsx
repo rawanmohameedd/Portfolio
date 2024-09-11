@@ -6,7 +6,7 @@ import Experience from './Components/Experience';
 
 export default function App() {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center m-0 p-0'>
       <div className='grid grid-cols-2 md:flex md:flex-col'>
         <Profile />
         <div className='flex flex-col'>

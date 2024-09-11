@@ -12,7 +12,7 @@ export function Profile() {
                 <div onClick={() => handleFullscreen(imageref)} className='cursor-pointer'>
                     <img
                         src={profile}
-                        className='rounded-full w-[400px] h-[400px] md:w-[200px] md:h-[200px]'
+                        className='rounded-full w-[300px] h-[300px] md:w-[200px] md:h-[200px]'
                         ref={imageref}
                     />
                 </div>
