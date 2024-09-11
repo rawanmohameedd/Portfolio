@@ -45,7 +45,8 @@ export const Gallery = () => {
     }, [index])
 
   return (
-    <div className='text-center' >
+    <div className='flex flex-col text-center justify-center items-center' >
+        
         {media[index].type === "image"?(
             <img src={media[index].src}
             width='400px'
