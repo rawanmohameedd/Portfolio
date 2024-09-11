@@ -8,12 +8,12 @@ export default function Experience() {
   const imageRef = useRef(null);
 
   return (
-    <div className="flex flex-col w-2/3 md:w-screen bg-background justify-center items-center relative p-3 pt-10">
+    <div className="flex flex-col  bg-background justify-center items-center relative p-3 pt-10">
       <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6 ">
         Experience
       </h2>
 
-      <div className="w-full flex flex-col space-y-4 mb-6 ">
+      <div className="flex flex-col space-y-4 mb-6 ">
         <div className="flex flex-row justify-between items-center ">
           <h3 className="text-xl font-bold">Full-stack Projects - Freelance</h3>
           <span className="text-xl">11/2023 - present</span>
@@ -44,7 +44,7 @@ export default function Experience() {
           </ul>
         </div>
 
-        <div className=" flex w-screen">
+        <div className=" flex">
           <span className={langStyle}>React</span>
           <span className={langStyle}>Node.js</span>
           <span className={langStyle}>Express</span>
@@ -53,17 +53,17 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col space-y-4 hover:bg-primary">
+      <div className="flex flex-col space-y-4 hover:bg-primary">
         <div className="flex flex-row justify-between items-center">
           <h3 className="text-xl font-bold">Coding Instructor - iSchool</h3>
           <span className="text-xl">06/2024 - 08/2024</span>
         </div>
 
-        <div className="grid grid-cols-4 items-center space-x-4">
-          <div className="col-span-2 flex justify-center items-center" onClick={() => handleFullscreen(imageRef)}>
+        <div className="grid grid-cols-2 items-center space-x-4">
+          <div className="flex justify-center items-center" onClick={() => handleFullscreen(imageRef)}>
             <img ref={imageRef} src={ischool2} width="500px" height="500px" />
           </div>
-          <div className="col-span-2 flex justify-center items-start">
+          <div className="flex justify-center items-start">
             <p className="text-justify text-lg self-center">
               Taught grade 5 students coding concepts as part of the Digital Egypt Marvel Initiative.
               It was a rewarding experience to help students develop problem-solving skills in cooperation

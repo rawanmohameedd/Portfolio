@@ -6,7 +6,7 @@ import Experience from './Components/Experience';
 
 export default function App() {
   return (
-    <div className='flex flex-col items-center w-screen h-screen'>
+    <div className='flex flex-col items-center '>
       <Aboutme />
       <Experience />
       <Projects />

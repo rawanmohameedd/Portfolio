@@ -2,11 +2,11 @@ import React, { useRef } from 'react'
 import profile from '../Images/Rawan (1).jpg'
 import { handleFullscreen } from '../fullscreen'
 
-export const langStyle = "bg-primary  rounded-2xl text-center p-2 mr-1 mb-2 text-white w-fit inline-block"
+export const langStyle = "bg-primary  rounded-2xl text-center p-2 mr-1 my-2 text-white w-fit inline-block"
 export default function Aboutme() {
     const imageref = useRef(null)
     return (
-        <div className=' flex flex-row md:flex-col w-screen  bg-background  justify-center relative top-0  p-2'>
+        <div className=' flex flex-row md:flex-col  bg-background  justify-center relative top-0  p-2'>
             <div onClick={()=>handleFullscreen(imageref)}
             className='w-fit flex flex-col md:flex-row md:m-4 font-bold items-center justify-center  text-primary md:text-xl text-2xl '>
                 <img src={profile} width='200px' height='200px' 
