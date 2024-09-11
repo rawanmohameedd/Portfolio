@@ -8,18 +8,18 @@ export default function Experience() {
   const imageRef = useRef(null);
 
   return (
-    <div className="flex flex-col  bg-background justify-center items-center relative p-3 pt-10">
-      <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6 ">
+    <div className="flex flex-col bg-background justify-center items-center relative p-3 pt-10">
+      <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6">
         Experience
       </h2>
 
-      <div className="flex flex-col space-y-4 mb-6 ">
-        <div className="flex flex-row justify-between items-center ">
+      <div className="flex flex-col space-y-4 mb-6 w-full max-w-4xl">
+        <div className="flex flex-row justify-between items-center border-b pb-4">
           <h3 className="text-xl font-bold">Full-stack Projects - Freelance</h3>
           <span className="text-xl">11/2023 - present</span>
         </div>
 
-        <div className="hover:bg-primary text-xl">
+        <div className="hover:bg-primary text-xl p-4 rounded">
           <h4 className="font-bold">Learning Management System Website</h4>
           <p>
             Collaborated in developing a website that enables users to:
@@ -33,7 +33,7 @@ export default function Experience() {
           <p>Enhanced the overall learning experience for users by providing seamless access to learning materials.</p>
         </div>
 
-        <div className="hover:bg-primary text-xl">
+        <div className="hover:bg-primary text-xl p-4 rounded">
           <h4 className="font-bold">E-Commerce Website</h4>
           <p>
             Collaborated in developing an innovative e-commerce platform, ensuring:
@@ -44,7 +44,7 @@ export default function Experience() {
           </ul>
         </div>
 
-        <div className=" flex">
+        <div className="flex flex-wrap gap-4">
           <span className={langStyle}>React</span>
           <span className={langStyle}>Node.js</span>
           <span className={langStyle}>Express</span>
@@ -53,26 +53,26 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="flex flex-col space-y-4 hover:bg-primary">
-        <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-col space-y-4 w-full max-w-4xl">
+        <div className="flex flex-row justify-between items-center border-b pb-4">
           <h3 className="text-xl font-bold">Coding Instructor - iSchool</h3>
           <span className="text-xl">06/2024 - 08/2024</span>
         </div>
 
-        <div className="grid grid-cols-2 items-center space-x-4">
-          <div className="flex justify-center items-center" onClick={() => handleFullscreen(imageRef)}>
-            <img ref={imageRef} src={ischool2} width="500px" height="500px" />
-          </div>
-          <div className="flex justify-center items-start">
-            <p className="text-justify text-lg self-center">
+        <div className="flex flex-row items-center space-x-4 hover:bg-primary p-4 rounded">
+          <div className="flex-grow text-justify text-lg">
+            <p>
               Taught grade 5 students coding concepts as part of the Digital Egypt Marvel Initiative.
               It was a rewarding experience to help students develop problem-solving skills in cooperation
               with the Ministry of Communications and Information Technology, Egypt.
             </p>
           </div>
+
+          <div className="flex-shrink-0 cursor-pointer" onClick={() => handleFullscreen(imageRef)}>
+            <img ref={imageRef} src={ischool2} width="300px" height="300px" alt="iSchool Certificate" />
+          </div>
         </div>
       </div>
-
     </div>
   );
 }

@@ -43,9 +43,8 @@ export const Projects = () => {
               </p>
             </details>
 
-            <details className="bg-gray-100 p-4 rounded-md">
+            <details className="bg-gray-100 p-4 rounded-md mt-2">
               <summary className={summaryStyle}>2. Mobile Application</summary>
-              <p className="mt-2">
                 Our mobile application offers several key features:
                 <ul className="list-disc pl-5 mt-1">
                   <li>User Accounts: Tourists and tour guides can create accounts.</li>
@@ -72,7 +71,6 @@ export const Projects = () => {
                         See Backend Code
                     </a>
                       </div>
-              </p>
             </details>
 
             <details className="bg-gray-100 p-4 rounded-md">
