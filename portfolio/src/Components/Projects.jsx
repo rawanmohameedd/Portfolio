@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaGraduationCap } from 'react-icons/fa'
-import projectLogo from '../Images/logo.PNG'
 import { langStyle } from './Aboutme'
+import { Gallery } from './Gallery'
 
 export const Projects = () => {
   const summaryStyle = "font-bold list-none cursor-pointer"
@@ -95,12 +95,13 @@ export const Projects = () => {
           </div>
 
           <div className="flex justify-center items-center">
-          <img
+          {/* <img
               src={projectLogo}
               height="400px"
               width="400px"
               className="animate-spin"
-            />
+            /> */}
+            <Gallery/>
           </div>
         </div>
       </div>
