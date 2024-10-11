@@ -6,7 +6,7 @@ import { Gallery } from './Gallery'
 export const Projects = () => {
   const summaryStyle = "font-bold list-none cursor-pointer"
   return (
-    <div className="flex flex-col  bg-background relative p-6 pt-12 mx-auto">
+    <div className="flex flex-col   relative p-6 pt-12 mx-auto">
       <h2 className="text-center text-primary text-3xl md:text-2xl font-bold mb-10">
         Projects
       </h2>
@@ -22,7 +22,7 @@ export const Projects = () => {
               This project was developed by a team of five members, with me as the team leader and responsible for full stack and software development. <span className="font-bold">The project divided into:</span>
             </p>
 
-            <details className="bg-gray-100 p-4 rounded-md">
+            <details className="bg-hoverPrimary p-4 rounded-md">
               <summary className={summaryStyle}>1. Indoor Localization</summary>
               <p className="mt-2 text-justify">
                 We developed an indoor navigation system that relies on collecting a dataset containing RSSI of WiFi readings from specific routers.
@@ -43,7 +43,7 @@ export const Projects = () => {
               </p>
             </details>
 
-            <details className="bg-gray-100 p-4 rounded-md mt-2">
+            <details className="bg-hoverPrimary p-4 rounded-md mt-2">
               <summary className={summaryStyle}>2. Mobile Application</summary>
               Our mobile application offers several key features:
               <ul className="list-disc pl-5 mt-1 text-justify">
@@ -73,7 +73,7 @@ export const Projects = () => {
               </div>
             </details>
 
-            <details className="bg-gray-100 p-4 rounded-md">
+            <details className="bg-hoverPrimary p-4 rounded-md">
               <summary className={summaryStyle}>3. Administrator Website</summary>
               <p className="mt-2 text-justify">
                 Admins can add, edit, and delete museum information. They can also monitor all users and their locations within the museum. <br />
