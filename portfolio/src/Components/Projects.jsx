@@ -107,9 +107,9 @@ export const Projects = () => {
           <p className="mt-2 text-justify">
             The Keep Note Application is a note-taking app designed to allow users to:
             <ul className="list-disc pl-5 mt-1">
-              <li>Take Notes: Create and manage notes on various topics.</li>
-              <li>Add Notes to Labels/Categories: Organize notes into different categories or labels for easier navigation and filtering.</li>
-              <li>Set Reminders for a Note: Assign reminders to notes, helping users keep track of important tasks and deadlines.</li>
+              <li><span className='font-bold'>Take Notes:</span> Create and manage notes on various topics.</li>
+              <li><span className='font-bold'>Add Notes to Labels/Categories:</span> Organize notes into different categories or labels for easier navigation and filtering.</li>
+              <li><span className='font-bold'>Set Reminders for a Note:</span> Assign reminders to notes, helping users keep track of important tasks and deadlines.</li>
             </ul>
 
             <br />
