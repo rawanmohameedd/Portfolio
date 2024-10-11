@@ -60,7 +60,7 @@ export function Aboutme() {
 
             <a
                 className='flex justify-center text-primary underline'
-                href='https://drive.google.com/file/d/1VsV1OFmbglMFxgU3zzuPh5-RdWtvAsR4/view'>
+                href='https://drive.google.com/file/d/1JGti2mOvFCiT7wgvEz6nv2uFXvHTzeQX/view?usp=sharing'>
                 See full Resume
             </a>
         </div>
