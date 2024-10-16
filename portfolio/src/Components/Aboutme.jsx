@@ -53,6 +53,7 @@ export function Aboutme() {
                 <span className={langStyle}>PostgreSQL</span>
                 <span className={langStyle}>MySQL</span>
                 <span className={langStyle}>MongoDB</span>
+                <span className={langStyle}>Prisma ORM</span>
 
             </div>
             allowing me to build robust and scalable applications.

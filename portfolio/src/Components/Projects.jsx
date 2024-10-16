@@ -16,7 +16,7 @@ export const Projects = () => {
           Tourist Companion <span className="ml-2 text-primary"><FaGraduationCap /></span>
         </h3>
 
-        <div className="grid grid-cols-2 gap-8 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-1 gap-8 mt-6">
           <div className="space-y-4 ">
             <p className='text-justify'>
               This project was developed by a team of five members, with me as the team leader and responsible for full stack and software development. <span className="font-bold">The project divided into:</span>
@@ -93,7 +93,7 @@ export const Projects = () => {
           </div>
 
           <div className="flex justify-center items-center">
-            <Gallery />
+            <Gallery mediaList={1}/>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@ export const Projects = () => {
           FundSphere Website
         </h3>
 
-        <div className="grid grid-cols-1 gap-8 mt-6">
+        <div className="grid grid-cols-2 md:grid-cols-1 gap-8 mt-6">
           <p className="mt-2 text-justify">
             The goal of this project is to create a simple crowdfunding application using React for the frontend and Express for the backend. The app will allow users to create and manage crowdfunding campaigns, view existing campaigns, and make donations. Key features include:
 
@@ -176,7 +176,9 @@ export const Projects = () => {
               </a>
             </div>
           </p>
-
+          <div className="flex justify-center items-center">
+            <Gallery mediaList={2}/>
+          </div>
         </div>
       </div>
     </div>
