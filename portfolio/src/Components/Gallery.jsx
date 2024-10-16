@@ -61,7 +61,7 @@ export const Gallery = ({ mediaList }) => {
         if (pause) return
         const interval = setInterval(() => {
             next()
-        }, 5000)
+        }, 2000)
 
         return () => clearInterval(interval)
     }, [index, pause])
