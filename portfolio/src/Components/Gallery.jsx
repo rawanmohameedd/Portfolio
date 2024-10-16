@@ -61,7 +61,7 @@ export const Gallery = ({ mediaList }) => {
         if (pause) return
         const interval = setInterval(() => {
             next()
-        }, 2000)
+        }, 5000)
 
         return () => clearInterval(interval)
     }, [index, pause])
@@ -78,7 +78,8 @@ export const Gallery = ({ mediaList }) => {
                 {currentItem.type === "image" ? (
                     <img src={currentItem.src}
                         width='400px'
-                        height='400px'
+                        height='300px'
+                        className='contain-size'
                         ref={mediaref}
                     />
                 ) : (
@@ -88,6 +89,7 @@ export const Gallery = ({ mediaList }) => {
                         autoPlay
                         loop
                         ref={mediaref}
+                        className='contain-size'
                     />
                 )}
             </div>
