@@ -19,7 +19,7 @@ export default {
       colors: {
         primary: '#0077b6',  
         secondary: '#2b2b2b', 
-        background: '#f8f9fa', 
+        background: '#F5F5DC', 
         hoverPrimary: '#D2B48C', 
         contactBg: '#242424', 
       },

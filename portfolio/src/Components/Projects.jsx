@@ -6,7 +6,7 @@ import { Gallery } from './Gallery'
 export const Projects = () => {
   const summaryStyle = "font-bold list-none cursor-pointer"
   return (
-    <div className="flex flex-col   relative p-6 pt-12 mx-auto">
+    <div className="flex flex-col   relative p-6 pt-12 mx-auto bg-background">
       <h2 className="text-center text-primary text-3xl md:text-2xl font-bold mb-10">
         Projects
       </h2>

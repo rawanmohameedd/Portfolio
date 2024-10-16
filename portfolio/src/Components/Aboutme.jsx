@@ -7,7 +7,8 @@ export function Profile() {
     const imageref = useRef(null);
 
     return (
-        <div className='flex items-center justify-center md:m-4'>
+        <div className='bg-background'>
+        <div className='flex items-center justify-center md:m-4 bg-background'>
             <div className='w-fit flex flex-col items-center justify-center text-primary font-bold  md:text-xl text-2xl'>
                 <div onClick={() => handleFullscreen(imageref)} className='cursor-pointer'>
                     <img
@@ -22,13 +23,15 @@ export function Profile() {
                 </div>
             </div>
         </div>
+        </div>
     );
 }
 
 
 export function Aboutme() {
     return (
-        <div className='ml-4 text-[20px] text-secondary mt-5'>
+        <div className='bg-background'>
+        <div className='ml-4 text-[20px] text-secondary mt-5 bg-background'>
             <span > Full-Stack Developer with a passion for creating innovative responsive solutions.</span>
             <p> I specialize in a range of technologies including:
             </p>
@@ -64,6 +67,7 @@ export function Aboutme() {
                 href='https://drive.google.com/file/d/1JGti2mOvFCiT7wgvEz6nv2uFXvHTzeQX/view?usp=sharing'>
                 See full Resume
             </a>
+        </div>
         </div>
     )
 }

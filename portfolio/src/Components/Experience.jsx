@@ -8,7 +8,7 @@ export default function Experience() {
   const imageRef = useRef(null);
 
   return (
-    <div className="flex flex-col  justify-center items-center relative p-3 pt-10">
+    <div className="flex flex-col  justify-center items-center relative p-3 pt-10 bg-background">
       <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6">
         Experience
       </h2>
