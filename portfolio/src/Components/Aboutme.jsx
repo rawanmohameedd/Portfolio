@@ -7,8 +7,8 @@ export function Profile() {
     const imageref = useRef(null);
 
     return (
-        <div className='bg-background'>
-        <div className='flex items-center justify-center md:m-4 bg-background'>
+        <div className='bg-background flex items-center justify-center'>
+        <div className=' md:m-4 bg-background'>
             <div className='w-fit flex flex-col items-center justify-center text-primary font-bold  md:text-xl text-2xl'>
                 <div onClick={() => handleFullscreen(imageref)} className='cursor-pointer'>
                     <img
