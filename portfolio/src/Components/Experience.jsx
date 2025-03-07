@@ -12,7 +12,28 @@ export default function Experience() {
       <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6">
         Experience
       </h2>
+      {/* ASCIT */}
+      <div className="flex flex-col space-y-4 mb-6 w-full max-w-4xl">
+        <div className="flex flex-row justify-between items-center border-b pb-4">
+          <h3 className="text-xl font-bold">Full-Stack Developer - ASCIT</h3>
+          <span className="text-xl">11/2024 - present</span>
+        </div>
+<div className='hover:bg-primary p-2'>
 
+        Developing full-stack web applications, creating responsive user interfaces and robust APIs. Implemented strong security measures
+and optimized database performance.
+</div>
+
+        <div className="flex flex-wrap gap-4">
+          <span className={langStyle}>Next.js</span>
+          <span className={langStyle}>TypeScript</span>
+          <span className={langStyle}>PrismaORM</span>
+          <span className={langStyle}>React</span>
+          <span className={langStyle}>Node.js</span>
+          <span className={langStyle}>Express</span>
+        </div>
+      </div>
+{/* freelance */}
       <div className="flex flex-col space-y-4 mb-6 w-full max-w-4xl">
         <div className="flex flex-row justify-between items-center border-b pb-4">
           <h3 className="text-xl font-bold">Full-stack Projects - Freelance</h3>
@@ -53,6 +74,7 @@ export default function Experience() {
         </div>
       </div>
 
+{/* ischool */}
       <div className="flex flex-col space-y-4 w-full max-w-4xl">
         <div className="flex flex-row justify-between items-center border-b pb-4">
           <h3 className="text-xl font-bold">Coding Instructor - iSchool</h3>

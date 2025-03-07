@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaGraduationCap } from 'react-icons/fa'
 import { langStyle } from './Aboutme'
 import { Gallery } from './Gallery'
