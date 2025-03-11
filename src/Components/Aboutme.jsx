@@ -68,7 +68,7 @@ export function Aboutme() {
                     </p>
                     <a
                         className="inline-block text-primary font-semibold underline mt-2 text-lg hover:text-blue-600 transition"
-                        href="https://drive.google.com/file/d/1KP3Zja62gV4-MX81dwylVCFn8irtcwqD/view?usp=sharing"
+                        href="https://drive.google.com/file/d/13FMTcbzcDTrUcpNXopEcexo6kcjlnUTi/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

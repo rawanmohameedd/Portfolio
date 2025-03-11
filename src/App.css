@@ -1,0 +1,32 @@
+/* App.css */
+.transition-container {
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Optional: Add a slight slide-up effect */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ensure the animation triggers on route change */
+  .transition-container[data-route] {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Optional: Add a fade-out effect for the previous page (requires additional logic) */
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
