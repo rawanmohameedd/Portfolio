@@ -1,29 +1,27 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { FaLinkedin } from 'react-icons/fa'
-import { GrGithub } from 'react-icons/gr'
-import { SiGmail } from 'react-icons/si'
+import { useEffect, useRef, useState } from 'react';
+import { FaLinkedin } from 'react-icons/fa';
+import { GrGithub } from 'react-icons/gr';
+import { SiGmail } from 'react-icons/si';
 
 export default function Contactme() {
-    const [isOpen, setOpen] = useState(false)
-
-    const contactRef = useRef(null)
+    const [isOpen, setOpen] = useState(false);
+    const contactRef = useRef(null);
 
     const toggle = () => {
-        setOpen(!isOpen)
-    }
+        setOpen(!isOpen);
+    };
 
-    
     const handleClickOutside = (event) => {
         if (contactRef.current && !contactRef.current.contains(event.target))
-            setOpen(false)
-    }
+            setOpen(false);
+    };
 
     useEffect(() => {
-        document.addEventListener('click', handleClickOutside)
+        document.addEventListener('click', handleClickOutside);
         return () => {
-            document.removeEventListener('click', handleClickOutside)
-        }
-    }, [])
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
 
     return (
         <div
@@ -45,5 +43,5 @@ export default function Contactme() {
                 </div>
             )}
         </div>
-    )
+    );
 }

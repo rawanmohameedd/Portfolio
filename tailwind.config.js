@@ -23,9 +23,7 @@ export default {
         hoverPrimary: '#D2B48C', 
         contactBg: '#242424', 
       },
-      screens:{
-        'md': {'max': '850px'} 
-      }
+
     },
   },
   plugins: [],
