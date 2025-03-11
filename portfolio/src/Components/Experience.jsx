@@ -1,99 +1,117 @@
-import React, { useRef } from 'react';
-import ischool1 from '../Images/undefined Certificate.png';
+import { useRef } from 'react';
 import ischool2 from '../Images/undefined Certificate (1).png';
+import certificate from '../Images/Screenshot 2025-03-11 071822.png';
+import award from '../Images/Portfolio.jpg';
+import personal from '../Images/WhatsApp Image 2024-12-01 at 20.34.19_1f88b386.jpg';
 import { handleFullscreen } from '../fullscreen';
 import { langStyle } from './Aboutme';
 
 export default function Experience() {
-  const imageRef = useRef(null);
+  const imageRef1 = useRef(null);
+  const imageRef2 = useRef(null);
+  const imageRef3 = useRef(null);
+  const imageRef4 = useRef(null);
 
+  const imgStyle ="w-full h-48 object-contain rounded-lg transition duration-300 cursor-pointer";
+  
   return (
-    <div className="flex flex-col  justify-center items-center relative p-3 pt-10 bg-background">
-      <h2 className="text-center text-primary md:text-xl text-2xl font-bold mb-6">
-        Experience
-      </h2>
-      {/* ASCIT */}
-      <div className="flex flex-col space-y-4 mb-6 w-full max-w-4xl">
-        <div className="flex flex-row justify-between items-center border-b pb-4">
-          <h3 className="text-xl font-bold">Full-Stack Developer - ASCIT</h3>
-          <span className="text-xl">11/2024 - present</span>
-        </div>
-<div className='hover:bg-primary p-2'>
+    <div className="bg-background min-h-screen flex items-center justify-center p-6">
+      <div className="max-w-6xl w-full p-6 md:p-12">
+        <h2 className="text-center text-primary text-2xl md:text-3xl font-bold mb-10">
+          Experience
+        </h2>
 
-        Developing full-stack web applications, creating responsive user interfaces and robust APIs. Implemented strong security measures
-and optimized database performance.
-</div>
+        <div className="grid grid-cols-1 gap-10">
+          {/* ASCIT */}
+          <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+              <h3 className="text-xl md:text-2xl font-bold text-primary">
+                Full-Stack Developer - ASCIT (full time)
+              </h3>
+              <span className="text-lg text-gray-600 mt-2 md:mt-0">11/2024 - present</span>
+            </div>
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              Take ownership of designing, developing, and integrating backend systems while working under the supervision of a project manager. I focus on building scalable and efficient solutions by implementing new features, optimizing database interactions, and integrating APIs. I collaborate closely with the frontend team to ensure a smooth connection between the backend and user interfaces, keeping communication open to clarify requirements, share progress, and troubleshoot any challenges for a seamless user experience.
+            </p>
+            <div className="flex flex-wrap justify-start mt-4 gap-2">
+              {["Next.js", "TypeScript", "PrismaORM", "Node.js", "Express.js", "PosrtgreSQL", "React", "Tailwind"].map((tech) => (
+                <span key={tech} className={langStyle}>{tech}</span>
+              ))}
 
-        <div className="flex flex-wrap gap-4">
-          <span className={langStyle}>Next.js</span>
-          <span className={langStyle}>TypeScript</span>
-          <span className={langStyle}>PrismaORM</span>
-          <span className={langStyle}>React</span>
-          <span className={langStyle}>Node.js</span>
-          <span className={langStyle}>Express</span>
-        </div>
-      </div>
-{/* freelance */}
-      <div className="flex flex-col space-y-4 mb-6 w-full max-w-4xl">
-        <div className="flex flex-row justify-between items-center border-b pb-4">
-          <h3 className="text-xl font-bold">Full-stack Projects - Freelance</h3>
-          <span className="text-xl">11/2023 - present</span>
-        </div>
+            </div>
+          </div>
 
-        <div className="hover:bg-primary text-xl p-4 rounded">
-          <h4 className="font-bold">Learning Management System Website</h4>
-          <p>
-            Collaborated in developing a website that enables users to:
-          </p>
-          <ul className="list-disc pl-6">
-            <li>Sign up or log in</li>
-            <li>Browse course categories</li>
-            <li>Select specific courses and access content including videos</li>
-            <li>View instructor ratings and biographies</li>
-          </ul>
-          <p>Enhanced the overall learning experience for users by providing seamless access to learning materials.</p>
-        </div>
+          {/* React Web Developer */}
+          <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+              <h3 className="text-xl md:text-2xl font-bold text-primary">
+                React Web Developer - Ministry of Communications and Information Technology (Training)
+              </h3>
+              <span className="text-lg text-gray-600 mt-2 md:mt-0">06/2024 - 10/2024</span>
+            </div>
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
+              Acquired expertise in React and Node.js, including Docker deployment, unit testing, and functional documentation, enhancing development speed.
+              Securing the 1st place in the track thanks to graduation project ChitChat.
+            </p>
 
-        <div className="hover:bg-primary text-xl p-4 rounded">
-          <h4 className="font-bold">E-Commerce Website</h4>
-          <p>
-            Collaborated in developing an innovative e-commerce platform, ensuring:
-          </p>
-          <ul className="list-disc pl-6">
-            <li>Efficient management of product listings, orders, and customer data</li>
-            <li>Seamless user experience for shoppers</li>
-          </ul>
-        </div>
+            {/* Credentials Dropdown */}
+            <details className="mt-4">
+              <summary className="cursor-pointer text-primary font-semibold underline hover:text-blue-600 transition">
+                Credentials
+              </summary>
+              <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mt-4">
+                <img
+                  ref={imageRef1}
+                  src={certificate}
+                  className={imgStyle}  onClick={() => handleFullscreen(imageRef1)}
+                />
+                <img
+                  ref={imageRef3}
+                  src={personal}
+                  className={imgStyle}  onClick={() => handleFullscreen(imageRef3)}
+                />
+                <img
+                  ref={imageRef2}
+                  src={award}
+                  className={imgStyle}  onClick={() => handleFullscreen(imageRef2)}
+                />
+              </div>
 
-        <div className="flex flex-wrap gap-4">
-          <span className={langStyle}>React</span>
-          <span className={langStyle}>Node.js</span>
-          <span className={langStyle}>Express</span>
-          <span className={langStyle}>PostgreSQL</span>
-          <span className={langStyle}>MongoDB</span>
-        </div>
-      </div>
+            </details>
 
-{/* ischool */}
-      <div className="flex flex-col space-y-4 w-full max-w-4xl">
-        <div className="flex flex-row justify-between items-center border-b pb-4">
-          <h3 className="text-xl font-bold">Coding Instructor - iSchool</h3>
-          <span className="text-xl">06/2024 - 08/2024</span>
-        </div>
+            <div className="flex flex-wrap justify-start mt-4 gap-2">
+              {["React", "Tailwind", "NodeJs", "Express", "Databases", "Unit Testing", "Docker"].map((tech) => (
+                <span key={tech} className={langStyle}>{tech}</span>
+              ))}
+            </div>
+          </div>
 
-        <div className="flex flex-row items-center space-x-4 hover:bg-primary p-4 rounded">
-          <div className="flex-grow text-justify text-lg">
-            <p>
+          {/* iSchool */}
+          <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+              <h3 className="text-xl md:text-2xl font-bold text-primary">
+                Coding Instructor - iSchool (part time)
+              </h3>
+              <span className="text-lg text-gray-600 mt-2 md:mt-0">06/2024 - 08/2024</span>
+            </div>
+            <p className="text-lg text-gray-700 leading-relaxed text-justify">
               Taught grade 5 students coding concepts as part of the Digital Egypt Marvel Initiative.
               It was a rewarding experience to help students develop problem-solving skills in cooperation
               with the Ministry of Communications and Information Technology, Egypt.
             </p>
-          </div>
 
-          <div className="flex-shrink-0" onClick={() => handleFullscreen(imageRef)}>
-            <img ref={imageRef} 
-            src={ischool2} 
-            className='w-[300px] h-[300px] md:w-[150px] md:h-[150px]' />
+            {/* Credentials Dropdown */}
+            <details className="mt-4">
+              <summary className="cursor-pointer text-primary font-semibold underline hover:text-blue-600 transition">
+                Credentials
+              </summary>
+              <img
+                ref={imageRef4}
+                src={ischool2}
+                className={imgStyle}
+                onClick={() => handleFullscreen(imageRef4)}
+              />
+            </details>
           </div>
         </div>
       </div>
