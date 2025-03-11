@@ -8,7 +8,7 @@ export function Aboutme() {
     const imageref = useRef(null);
 
     return (
-        <div className="bg-background h-screen flex items-center justify-center p-6 overflow-hidden ">
+        <div className="bg-background min-h-screen flex items-center justify-center p-6 overflow-hidden ">
             <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full  p-6 md:p-12 gap-10">
                 {/* Left Section: Profile Image & Name */}
                 <div className="flex flex-col items-center text-center">
