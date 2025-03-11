@@ -20,7 +20,7 @@ export default {
         primary: '#0077b6',  
         secondary: '#2b2b2b', 
         background: '#F5F5DC', 
-        hoverPrimary: '#D2B48C', 
+        hoverPrimary: '#F5F5DC', 
         contactBg: '#242424', 
       },
 

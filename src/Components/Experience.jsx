@@ -5,6 +5,7 @@ import award from '../Images/Portfolio.jpg';
 import personal from '../Images/WhatsApp Image 2024-12-01 at 20.34.19_1f88b386.jpg';
 import { handleFullscreen } from '../fullscreen';
 import { langStyle } from './Aboutme';
+import { Link } from 'react-router-dom';
 
 export default function Experience() {
   const imageRef1 = useRef(null);
@@ -51,7 +52,7 @@ export default function Experience() {
             </div>
             <p className="text-lg text-gray-700 leading-relaxed text-justify">
               Acquired expertise in React and Node.js, including Docker deployment, unit testing, and functional documentation, enhancing development speed.
-              Securing the 1st place in the track thanks to graduation project ChitChat.
+              Securing the 1st place in the track thanks to graduation project <Link to='/projects#chitChat'>ChitChat</Link>.
             </p>
 
             {/* Credentials Dropdown */}
@@ -59,7 +60,7 @@ export default function Experience() {
               <summary className="cursor-pointer text-primary font-semibold underline hover:text-blue-600 transition">
                 Credentials
               </summary>
-              <div className="grid grid-cols-3 md:grid-cols-3 gap-4 mt-4">
+              <div className="flex flex-col md:flex-row gap-4 mt-4">
                 <img
                   ref={imageRef1}
                   src={certificate}
