@@ -14,7 +14,7 @@ export default function App() {
   useEffect(() => {}, [location]);
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-screen">
       {/* Sidebar */}
       <div className="w-[25%] m-0 fixed left-0 top-0 h-screen">
         <Sidebar />
