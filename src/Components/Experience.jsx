@@ -6,6 +6,7 @@ import personal from '../Images/WhatsApp Image 2024-12-01 at 20.34.19_1f88b386.j
 import { handleFullscreen } from '../fullscreen';
 import { langStyle } from './Aboutme';
 import { Link } from 'react-router-dom';
+import { ProjectSeparator } from './Seperator';
 
 export default function Experience() {
   const imageRef1 = useRef(null);
@@ -15,7 +16,7 @@ export default function Experience() {
 
   const imgStyle = "w-full h-48 object-contain rounded-lg transition duration-300 cursor-pointer";
   const summaryStyle = "cursor-pointer text-primary font-semibold underline hover:text-blue-600 transition";
-  
+
   return (
     <div className="bg-background min-h-screen flex items-center justify-center p-6">
       <div className="max-w-6xl w-full p-6 md:p-12">
@@ -52,7 +53,7 @@ export default function Experience() {
               ))}
             </div>
           </div>
-
+          <ProjectSeparator />
           {/* MCIT Training */}
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
@@ -66,44 +67,45 @@ export default function Experience() {
               Securing the 1st place in the track thanks to graduation project <Link to='/projects#chitChat' className="text-primary font-semibold underline hover:text-blue-600 transition">ChitChat</Link>.
             </p>
 
-           { /* Credentials Dropdown */}
-                  <details open className="mt-4 bg-hoverPrimary p-4 rounded-md">
-                    <summary className={summaryStyle}>
-                    Credentials
-                    </summary>
-                    <div className="flex flex-col md:flex-row gap-4 mt-4">
-                    <img
-                      ref={imageRef1}
-                      src={certificate}
-                      className={imgStyle}
-                      onClick={() => handleFullscreen(imageRef1)}
-                      alt="MCIT Certificate"
-                    />
-                    <img
-                      ref={imageRef3}
-                      src={personal}
-                      className={imgStyle}
-                      onClick={() => handleFullscreen(imageRef3)}
-                      alt="Personal photo"
-                    />
-                    <img
-                      ref={imageRef2}
-                      src={award}
-                      className={imgStyle}
-                      onClick={() => handleFullscreen(imageRef2)}
-                      alt="Award certificate"
-                    />
-                    </div>
-                  </details>
+            { /* Credentials Dropdown */}
+            <details open className="mt-4 bg-hoverPrimary p-4 rounded-md">
+              <summary className={summaryStyle}>
+                Credentials
+              </summary>
+              <div className="flex flex-col md:flex-row gap-4 mt-4">
+                <img
+                  ref={imageRef1}
+                  src={certificate}
+                  className={imgStyle}
+                  onClick={() => handleFullscreen(imageRef1)}
+                  alt="MCIT Certificate"
+                />
+                <img
+                  ref={imageRef3}
+                  src={personal}
+                  className={imgStyle}
+                  onClick={() => handleFullscreen(imageRef3)}
+                  alt="Personal photo"
+                />
+                <img
+                  ref={imageRef2}
+                  src={award}
+                  className={imgStyle}
+                  onClick={() => handleFullscreen(imageRef2)}
+                  alt="Award certificate"
+                />
+              </div>
+            </details>
 
-                  <div className="flex flex-wrap justify-start mt-4 gap-2">
-                    {["React", "Tailwind", "NodeJs", "Express", "Databases", "Unit Testing", "Docker"].map((tech) => (
-                    <span key={tech} className={langStyle}>{tech}</span>
-                    ))}
-                  </div>
-                  </div>
+            <div className="flex flex-wrap justify-start mt-4 gap-2">
+              {["React", "Tailwind", "NodeJs", "Express", "Databases", "Unit Testing", "Docker"].map((tech) => (
+                <span key={tech} className={langStyle}>{tech}</span>
+              ))}
+            </div>
+          </div>
+          <ProjectSeparator />
 
-                  {/* iSchool */}
+          {/* iSchool */}
           <div className="flex flex-col">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
               <h3 className="text-xl md:text-2xl font-bold text-primary">

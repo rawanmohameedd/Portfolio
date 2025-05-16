@@ -21,9 +21,9 @@ export function Aboutme() {
                         />
                     </div>
                     <h2 className="mt-4 text-2xl font-bold text-primary">Rawan Mohamed</h2>
-                    <p className="text-lg text-gray-600">Full-Stack Developer</p>
+                    <p className="text-lg text-gray-600">Software Engineer</p>
                     <p className="text-lg text-gray-700 leading-relaxed text-center md:text-left mt-4">
-                        Full-Stack Developer <span className='font-bold'>with a strong focus on back-end development</span>, passionate about building scalable and high-performance web applications.
+                        Software Engineer <span className='font-bold'>with a strong focus on back-end development</span>, passionate about building scalable and high-performance web applications.
                         My expertise spans system design, applying design patterns for code reusability, and optimizing front-end and back-end architectures.
                         I am committed to delivering high-quality software that balances performance, security, and user experience.
                     </p>
@@ -31,27 +31,27 @@ export function Aboutme() {
 
                 {/* Right Section: About Text */}
                 <div className="text-center md:text-left">
-                    
+
 
                     {/* Tech Stack */}
                     <div className="mt-6">
                         <h2 className="text-xl font-semibold text-primary">Frontend Development:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
-                            {["HTML", "CSS", "JavaScript", "TypeScript", "Next.js", "React", "React Native", "Tailwind", "Bootstrap", "SCSS"].map((tech) => (
+                            {["HTML", "CSS", "JavaScript", "TypeScript", "Next.js", "React", "React Native", "Tailwind", "Bootstrap", "SCSS", "Material UI"].map((tech) => (
                                 <span key={tech} className={langStyle}>{tech}</span>
                             ))}
                         </div>
 
                         <h2 className="text-xl font-semibold text-primary mt-4">Backend Development:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
-                            {["Node.js", "Express.js", "NestJS", "tRPC", "REST API", "GraphQL"].map((tech) => (
+                            {["Node.js", "Express.js", "NestJS", "Flask","tRPC", "REST API", "GraphQL"].map((tech) => (
                                 <span key={tech} className={langStyle}>{tech}</span>
                             ))}
                         </div>
 
                         <h2 className="text-xl font-semibold text-primary mt-4">Data Management:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
-                            {["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM"].map((tech) => (
+                            {["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM", "SQLALchemy"].map((tech) => (
                                 <span key={tech} className={langStyle}>{tech}</span>
                             ))}
                         </div>
@@ -59,6 +59,7 @@ export function Aboutme() {
                         <h2 className="text-xl font-semibold text-primary mt-4">Tools:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
                             <span className={langStyle}>Docker, Docker Compose</span>
+                            <span className={langStyle}>GitHub Actions</span>
                         </div>
                     </div>
 
