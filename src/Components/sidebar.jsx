@@ -37,25 +37,25 @@ export const Sidebar = () => {
           <FaBars className={iconStyles} />
         </button>
         <ul className="flex flex-col items-center">
-          <li className={liStyles}>
+          <li className={liStyles} title='Aboutme'>
             <a href="/" className={liLinksStyles}>
               <FaUser className={iconStyles} />
               {isOpen && <span>Aboutme</span>}
             </a>
           </li>
-          <li className={liStyles}>
+          <li className={liStyles} title='Contact'>
             <a href="/contactme" className={liLinksStyles}>
               <FaAddressCard className={iconStyles} />
               {isOpen && <span>Contact</span>}
             </a>
           </li>
-          <li className={liStyles}>
+          <li className={liStyles} title='Experience'>
             <a href="/experience" className={liLinksStyles}>
               <FaBriefcase className={iconStyles} />
               {isOpen && <span>Experience</span>}
             </a>
           </li>
-          <li className={liStyles}>
+          <li className={liStyles} title='Projects'>
             <a href="/projects" className={liLinksStyles}>
               <SiCodeblocks className={iconStyles} />
               {isOpen && <span>Projects</span>}
