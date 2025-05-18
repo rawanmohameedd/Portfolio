@@ -23,42 +23,7 @@ export const Projects = () => {
           Projects
         </h2>
 
-        <div className="grid grid-cols-1 gap-10">
-          {/* To be noted */}
-          <div className="flex flex-col" id="toBeNoted">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-              <h3 className="text-xl md:text-2xl font-bold text-primary">To Be Noted</h3>
-            </div>
-            <div className="text-lg text-gray-700 leading-relaxed text-justify">
-              A robust TypeScript/Express.js backend API for task management with MongoDB. Features include:
-              <ul className="list-disc pl-5 mt-1">
-
-                <li><span className='font-bold'>Secure Authentication:</span> JWT with refresh tokens and role-based access control (Admin/Manager/User)</li>
-
-                <li><span className='font-bold'>Optimized Database:</span> Well-structured MongoDB collections with efficient queries and indexing</li>
-
-                <li><span className='font-bold'>Performance Enhancements:</span> Redis caching with auto-invalidation and BullMQ for background processing</li>
-
-                <li><span className='font-bold'>Production-Ready:</span> Dockerized deployment on Vercel with CI/CD, MongoDB Atlas, and Redis Cloud</li>
-              </ul>
-              <div className="flex flex-wrap mt-4 gap-2">
-                {(["TypeScript", "Express.js", "MongoDB", "Redis", "JWT", "BullMQ", "Docker", "GitHub Actions", "Vercel"]).map((tech) => {
-                  return (
-                    <span key={tech} className={langStyle}>{tech}</span>
-                  )
-                })}
-
-              </div>
-              <div className='flex flex-row space-x-4 mt-4'>
-                <a className="text-primary font-semibold underline hover:text-blue-600 transition" href="https://github.com/rawanmohameedd/To_Be_Noted">See Source Code</a>
-                <a className="text-primary font-semibold underline hover:text-blue-600 transition" href="https://to-be-noted.vercel.app/api-docs/">See API Documentation</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <ProjectSeparator />
-        
+ 
         {/* CalcuMatch */}
         <div className="flex flex-col" id="calcuMatch">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
