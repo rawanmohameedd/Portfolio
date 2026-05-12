@@ -8,8 +8,8 @@ export function Aboutme() {
     const imageref = useRef(null);
 
     return (
-        <div className="bg-background min-h-screen flex items-center justify-center p-6 overflow-hidden ">
-            <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full  p-6 md:p-12 gap-10">
+        <div className="bg-background min-h-screen flex items-center justify-center p-6 overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl w-full p-6 md:p-12 gap-10">
                 {/* Left Section: Profile Image & Name */}
                 <div className="flex flex-col items-center text-center">
                     <div onClick={() => handleFullscreen(imageref)} className="cursor-pointer">
@@ -21,55 +21,61 @@ export function Aboutme() {
                         />
                     </div>
                     <h2 className="mt-4 text-2xl font-bold text-primary">Rawan Mohamed</h2>
-                    <p className="text-lg text-gray-600">Software Engineer</p>
+                    <p className="text-lg text-gray-600">Information Security Engineer</p>
                     <p className="text-lg text-gray-700 leading-relaxed text-center md:text-left mt-4">
-                        Software Engineer <span className='font-bold'>with a strong focus on back-end development</span>, passionate about building scalable and high-performance web applications.
-                        My expertise spans system design, applying design patterns for code reusability, and optimizing front-end and back-end architectures.
-                        I am committed to delivering high-quality software that balances performance, security, and user experience.
+                        Application Security Engineer <span className="font-bold">with a software development foundation</span> —
+                        bringing firsthand experience building APIs, implementing RBAC, and designing data models
+                        to the work of securing them. Focused on identifying vulnerabilities at the code and
+                        architecture level, integrating security into the SDLC, and translating technical risk
+                        into actionable remediation. Currently applying that developer-first perspective in a
+                        regulated banking environment.
                     </p>
                 </div>
 
-                {/* Right Section: About Text */}
+                {/* Right Section: Skills */}
                 <div className="text-center md:text-left">
-
-
-                    {/* Tech Stack */}
                     <div className="mt-6">
-                        <h2 className="text-xl font-semibold text-primary">Frontend Development:</h2>
+
+                        <h2 className="text-xl font-semibold text-primary">Application Security:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
-                            {["HTML", "CSS", "JavaScript", "TypeScript", "Next.js", "React", "React Native", "Tailwind", "Bootstrap", "SCSS", "Material UI"].map((tech) => (
+                            {["OWASP Top 10", "Penetration Testing", "SAST / DAST", "Secure SDLC", "Threat Modeling", "Burp Suite", "Metasploit"].map((tech) => (
                                 <span key={tech} className={langStyle}>{tech}</span>
                             ))}
                         </div>
 
-                        <h2 className="text-xl font-semibold text-primary mt-4">Backend Development:</h2>
+                        <h2 className="text-xl font-semibold text-primary mt-4">Security Operations:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
-                            {["Node.js", "Express.js", "NestJS", "Flask","tRPC", "REST API", "GraphQL"].map((tech) => (
+                            {["SIEM (QRadar)", "Incident Response", "Vulnerability Management", "CIS Benchmarks", "MITRE ATT&CK", "PAM", "FIM"].map((tech) => (
                                 <span key={tech} className={langStyle}>{tech}</span>
                             ))}
                         </div>
 
-                        <h2 className="text-xl font-semibold text-primary mt-4">Data Management:</h2>
+                        <h2 className="text-xl font-semibold text-primary mt-4">Programming & Scripting:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
-                            {["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM", "SQLALchemy"].map((tech) => (
+                            {["Python", "JavaScript", "TypeScript", "C/C++", "Bash"].map((tech) => (
                                 <span key={tech} className={langStyle}>{tech}</span>
                             ))}
                         </div>
 
-                        <h2 className="text-xl font-semibold text-primary mt-4">Tools:</h2>
+                        <h2 className="text-xl font-semibold text-primary mt-4">Tools & Platforms:</h2>
                         <div className="flex flex-wrap justify-center md:justify-start mt-2">
-                            <span className={langStyle}>Docker, Docker Compose</span>
-                            <span className={langStyle}>GitHub Actions</span>
+                            {["Nmap", "Wireshark", "ELK Stack", "Docker", "Git", "n8n", "Frida", "Drozer"].map((tech) => (
+                                <span key={tech} className={langStyle}>{tech}</span>
+                            ))}
+                        </div>
+
+                        <h2 className="text-xl font-semibold text-primary mt-4">Web & Development:</h2>
+                        <div className="flex flex-wrap justify-center md:justify-start mt-2">
+                            {["Node.js", "Express", "React", "REST / GraphQL APIs", "PostgreSQL", "Prisma"].map((tech) => (
+                                <span key={tech} className={langStyle}>{tech}</span>
+                            ))}
                         </div>
                     </div>
 
                     {/* Resume Link */}
-                    <p className="mt-6 text-lg text-gray-700">
-                        Allowing me to build robust and scalable applications.
-                    </p>
                     <a
-                        className="inline-block text-primary font-semibold underline mt-2 text-lg hover:text-blue-600 transition"
-                        href="https://drive.google.com/file/d/1TY5y_rST-jJhZ9qb9NnJfF4KLntwUtRY/view?usp=sharing"
+                        className="inline-block text-primary font-semibold underline mt-6 text-lg hover:text-blue-600 transition"
+                        href="https://drive.google.com/file/d/1208hStK3rXkYE928v62EY9FX_HJu_nl9/view?usp=drivesdk"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
